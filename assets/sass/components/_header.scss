@@ -1,0 +1,58 @@
+@use "../abstracts/variables";
+
+.header__menu {
+  background-color: variables.$background-grey;
+
+  .header__container {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+.menu {
+  margin-left: 2%;
+}
+
+.list {
+  display: flex;
+  justify-content: end;
+}
+
+.list__points {
+  font-family: variables.$header-font;
+  color: variables.$dark-font;
+}
+
+.connection {
+  margin-right: 3%;
+
+  .connection__button {
+    background-color: variables.$medium-font;
+    border: none;
+    color: white;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.5em;
+
+    .whatsapp-number {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  .connection__button:hover {
+    transform: scale(1.1);
+  }
+
+  .connection__button:active {
+    background-color: variables.$medium-font;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .whatsapp-number {
+    display: none;
+  }
+}
+
+
