@@ -1,4 +1,55 @@
-.btn:hover{
+.training-container {
+    min-height: 100vh; /* Контейнер занимает всю высоту экрана */
+    position: relative;
+    max-width: 100%;
+}
+
+.text-center {
+    color: #B59788; 
+    padding-bottom: 3.7vw; 
+    padding-top: 10vw; 
+    font-size: 2.9em;
+}
+
+.video {
+    max-width:65vw;
+}
+
+.cover-button {
+    padding-bottom: 12vw;
+}
+
+.btn {
+    background-color: #B59788; 
+    color: white; 
+    border: none; 
+    margin-top: 2.7vw; 
+    padding: 1vw 4.2vw; 
+    font-size: 1.3em; 
+    cursor: pointer;
+}
+
+.btn:hover {
     background-color: #B59788;
     opacity:0.8;
+}
+
+.leaf_up {
+    width: 14vw; 
+    bottom: 17vw;
+}
+
+.leaf_down{
+    width: 15vw; 
+    bottom: -2vw; 
+    padding-bottom: 5vw;
+}
+
+@media screen and (max-width: 376px) {
+    .text-center{
+        font-size: 25px;
+    }
+    .btn {
+        font-size: 15px;
+    }
 }
