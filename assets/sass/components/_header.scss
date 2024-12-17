@@ -33,10 +33,8 @@
     padding-left: 2em;
     padding-right: 2em;
     padding-bottom: 0.5em;
-
-    .whatsapp-number {
-      text-decoration: none;
-      color: white;
+    text-decoration: none;
+    color: white;
     }
   }
 
@@ -47,11 +45,24 @@
   .connection__button:active {
     background-color: variables.$medium-font;
   }
-}
 
 @media screen and (max-width: 991px) {
-  .whatsapp-number {
+  .connection__button {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .header__menu {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+  .list__points {
+    font-size: 1.1vw;
+  }
+
+  .connection__button {
+    font-size: 1.2vw;
   }
 }
 
