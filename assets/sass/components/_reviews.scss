@@ -1,0 +1,72 @@
+.card-wrapper {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+
+.card {
+  background: linear-gradient(rgb(189, 181, 242), rgb(242, 205, 211), );
+  border: 1px solid rgb(182, 180, 194);
+  border-radius: 20;
+  width: calc(100%/3);
+  margin: 0 0.5em;
+  box-shadow: 0 0 10px 3px rgb(139, 132, 132);
+}
+
+.quotes {
+  width: 30px;
+  height: 30px;
+  margin-right: auto;
+}
+
+.card-title {
+  margin-left: auto;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgb(211, 206, 206);
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 100px;
+}
+
+.maintext {
+  text-align: center;
+  color:rgb(80, 80, 80); 
+}
+
+// @media screen and (min-width:568px) and 
+// (max-width:1024px)
+
+
+@media screen and (max-width: 567px) {
+
+  .card-wrapper {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .card:not(:first-child) {
+    display: none;
+    width: 100%;
+  }
+
+  .card {
+    min-width: 100%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 2rem;
+  }
+}
