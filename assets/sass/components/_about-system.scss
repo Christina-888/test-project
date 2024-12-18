@@ -5,16 +5,16 @@
 .about-system {
     padding-top: 150px;
     padding-bottom: 150px;
-    padding-left: 7.5rem;
-    padding-right: 7.5rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5rem;
     background-color: variables.$background-grey;
     font-family: variables.$primary-font;
-    min-height: 700px;
-    max-width: 100%;
+    //min-height: 700px;
+    margin-bottom: 100px;
 }
 .about-system_wrap-left {
     max-width: calc(100% - 30rem - 5rem);
@@ -48,11 +48,26 @@
     max-width: none;
 }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
 .about-system {
-    padding-left: 1rem;    
-    padding-right: 1rem;
+    padding-left: 1.5rem;    
+    padding-right: 1.5rem;
     padding-top: 75px;
     padding-bottom: 75px;
 }
+}
+
+@media screen and (min-width: 2500px) {
+    .about-system {
+        font-size: 2rem;
+    }
+    .about-system_title {
+        font-size: 4rem;
+    }
+    .about-system_wrap-left {
+        max-width: calc(100% - 50rem - 5rem);
+    }
+    .about-system_img {
+        min-width: 50rem;
+    }
 }
