@@ -1,7 +1,10 @@
 @use "../abstracts/variables";
 @use "../base/fonts";
 
-
+.maintext{
+  font-family: variables.$primary-font;
+  color:rgb(181 151 136)
+}
 .card-wrapper {
   display: flex;
   margin-left: 100px;
