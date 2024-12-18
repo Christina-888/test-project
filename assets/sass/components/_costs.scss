@@ -1,10 +1,9 @@
-@use"../abstracts/variables";
-@use"../base/fonts";
+
 .section-costs {
     box-sizing: border-box;
-    background-image: url('../img/grainbackground.png');
+    background-image: url("/assets/img/grainbackground.png");
     background-repeat: repeat;
-    padding: 75px 80px 75px 80px;
+    padding: 75px 80px 0px 80px;
 
 }
 .costs-container {
