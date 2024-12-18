@@ -86,27 +86,19 @@
 
     <!-- Пробная тренировка (Саргылана) -->
     <div class="training-container">
-      <h1 class="text-center">Бесплатная пробная тренировка</h1>
-      <div class="d-flex justify-content-center">
-        <video class="video" controls>
-          <source src="./assets/img/video/promo_video.mp4" type="video/mp4" />
-          Ваш браузер не поддерживает тег видео.
-        </video>
+      <h2 class="text-center training-container__text">Бесплатная пробная тренировка</h2>
+      <div class="d-flex justify-content-center training-container__cover-video">
+          <video class="video training-container__video" controls poster="./assets/img/woman_train.jpg">
+              <source src="data:," type="video/mp4">
+              Ваш браузер не поддерживает тег видео.
+          </video>
       </div>
-      <div class="d-flex justify-content-center cover-button">
-        <a href="https://disk.yandex.ru" class="btn">Забрать тренировку</a>
+      <div class="d-flex justify-content-center training-container__cover-button">
+          <a href="#" target="_blank" class="btn training-container__button">Забрать тренировку</a>
       </div>
-      <div class="position-absolute">
-        <img
-          src="./assets/img/leaf_up.png"
-          alt="leaf_up"
-          class="position-absolute leaf_up"
-        />
-        <img
-          src="./assets/img/leaf_down.png"
-          alt="leaf_down"
-          class="position-absolute leaf_down"
-        />
+      <div class="position-absolute training-container__leafs">
+      <img src="./assets/img/leaf_up.png" alt="leaf_up" class="position-absolute training-container__leaf-up">
+      <img src="./assets/img/leaf_down.png" alt="leaf_down" class="position-absolute training-container__leaf-down">
       </div>
     </div>
     <!-- конец Пробная тренировка (Саргылана) -->
@@ -115,6 +107,32 @@
     <!-- конец О системе (Юля Хорева) -->
 
     <!-- Для кого подходит (Диана) -->
+    <div class="container target-audeince">
+      <h2 class="target-audeince__title w-50 mb-5 pt-5">Я с радостью буду проводить тренировки с женщинами, которые:</h2>
+      <div class="row justify-content-between">
+          <div class="col-12 col-md-4 mb-5">
+              <figure class="figure target-audeince__part-one">
+                  <img src="./assets/img/pregnant_card.png" class="figure-img img-fluid rounded target-audeince__pregnant_card" alt="pregnant_woman">
+                  <figcaption class="figure-caption target-audeince__figure-caption"><b>Сейчас беременны</b></figcaption>
+                  <p>Подготовка к родам</p>
+              </figure>
+          </div>
+          <div class="col-12 col-md-4">
+              <figure class="figure target-audeince__part-two">
+                  <img src="./assets/img/mom_baby_card.png" class="figure-img img-fluid rounded target-audeince__mom_baby_card" alt="mom_and_baby">
+                  <figcaption class="figure-caption target-audeince__figure-caption"><b>Хотят восстановиться после беременности и родов</b></figcaption>
+                  <p>Имеют опущение органов малого таза и диастаз</p>
+              </figure>
+          </div>
+          <div class="col-12 col-md-4">
+              <figure class="figure target-audeince__part-three">
+                  <img src="./assets/img/for_everybody_card.png" class="figure-img img-fluid rounded target-audeince__for_everybody_card" alt="for_everybody">
+                  <figcaption class="figure-caption target-audeince__figure-caption"><b>Для любого возраста</b></figcaption>
+              </figure>
+          </div>
+      </div>
+      <p class="target-audeince__text">Тренировки не требуют много времени, места и наличия дополнительного оборудования.</p>
+  </div>
     <!-- конец Для кого подходит (Диана) -->
 
     <!-- Стоимость (Наташа) -->
