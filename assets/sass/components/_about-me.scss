@@ -23,8 +23,55 @@
 .container__container-3 {
     display: grid;
     grid-template-columns: 1fr, 1fr;
+    align-items: end;
     height: 30%;
 }
-.path2 {
-    margin-left: 1rem;
+.path1 {
+    width: auto;
 }
+.path2 {
+    width: auto;
+    margin-left: 1.35rem;
+   }
+@media screen and (max-width: 1159px) {
+    .title-2 {
+    font-family: variables.$primary-font;
+    font-size: 1.2rem;
+    }
+    .container__container-3 {
+        display: none;
+      }
+      .container__container-1 {
+        width: auto;
+      }
+    }
+    @media screen and (max-width: 1020px) {
+        .wrap-aboutme {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            }
+    }
+     @media screen and (max-width: 1020px) {
+        .wrap-aboutme {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            }
+            .title-1 {
+                font-size: 1.8rem;
+            }
+    }
+    @media screen and (max-width: 330px) {
+        .title-1 {
+            font-size: 1.8rem;
+        }
+           .girl1 {
+            object-fit: cover;
+            width: 100%;  
+            vertical-align: middle; 
+            box-sizing: border-box;
+            margin: 1rem;
+    }}
