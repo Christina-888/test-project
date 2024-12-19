@@ -1,0 +1,88 @@
+@use "../abstracts/variables";
+@use "../base/fonts";
+
+.maintext{
+  font-family: variables.$primary-font;
+  color:rgb(181 151 136)
+}
+.card-wrapper {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+}
+
+.card {
+  background: linear-gradient((variables.$violet-font),
+      (variables.$pink-font));
+  border: 1px solid rgb(182, 180, 194);
+  border-radius: 20;
+  width: calc(100%/3);
+  margin: 0 0.5em;
+  box-shadow: 0 0 10px 3px variables.$shadow-font;
+  font-family: variables.$primary-font;
+
+}
+
+.quotes {
+  width: 30px;
+  height: 30px;
+  margin-right: auto;
+}
+
+.card-title {
+  margin-left: auto;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: variables.$shadow-font;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 100px;
+}
+
+.maintext {
+  text-align: center;
+}
+
+
+@media screen and (min-width: 568px) and (max-width: 1100px) {
+  .card {
+    width: 50%;
+  }
+
+  .card:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 567px) {
+
+  .card-wrapper {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .card:not(:first-child) {
+    display: none;
+    width: 100%;
+  }
+
+  .card {
+    min-width: 100%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 2rem;
+  }
+}
