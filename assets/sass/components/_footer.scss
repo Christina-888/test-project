@@ -2,7 +2,7 @@
 
 .footer {
   display: flex;
-  background-color: variables.$background-grey;
+  background: url(/test-project/assets/img/feedback/background.png), variables.$background-grey;
 
   .footer__list {
     display: inline-flex;
