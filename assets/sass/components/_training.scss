@@ -6,40 +6,37 @@
     padding-top: 10vw; 
     font-size: 2.9em;
 }
+    .training-container__video {
+        max-width: 60vw;
+    }
 
-.training-container__video {
-    max-width: 60vw;
-}
+    .training-container__cover-button {
+        padding-bottom: 12vw;
+        margin-top: 5.5vw; 
+    }
+        .training-container__button {
+            background-color: variables.$medium-font; 
+            color: white; 
+            border: none; 
+            padding: 1vw 4.2vw; 
+            font-size: 1.3em; 
+            cursor: pointer;
+        }
+    
+        .training-container__button:hover {
+            background-color: variables.$medium-font;
+            opacity:0.8;
+        }
 
-.training-container__cover-button {
-    padding-bottom: 12vw;
-    margin-top: 5.5vw; 
-}
-
-.training-container__button {
-    background-color: variables.$medium-font; 
-    color: white; 
-    border: none; 
-    padding: 1vw 4.2vw; 
-    font-size: 1.3em; 
-    cursor: pointer;
-}
-
-.training-container__button:hover {
-    background-color: variables.$medium-font;
-    opacity:0.8;
-}
-
-.training-container__leaf-up {
-    width: 14vw; 
-    bottom: 17vw;
-}
-
-.training-container__leaf-down {
-    width: 15vw; 
-    bottom: -2vw; 
-    padding-bottom: 5vw;
-}
+    .training-container__leaf-up {
+        width: 14vw; 
+        bottom: 17vw;
+    }
+        .training-container__leaf-down {
+            width: 15vw; 
+            bottom: -2vw; 
+            padding-bottom: 5vw;
+        }
 
 @media screen and (max-width: 900px) {
     .training-container__text {
