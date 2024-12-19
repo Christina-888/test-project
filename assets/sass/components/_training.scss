@@ -1,5 +1,7 @@
+@use "../abstracts/variables";
+
 .training-container__text {
-    color: #B59788; 
+    color: variables.$medium-font; 
     padding-bottom: 3.7vw; 
     padding-top: 10vw; 
     font-size: 2.9em;
@@ -15,7 +17,7 @@
 }
 
 .training-container__button {
-    background-color: #B59788; 
+    background-color: variables.$medium-font; 
     color: white; 
     border: none; 
     padding: 1vw 4.2vw; 
@@ -24,7 +26,7 @@
 }
 
 .training-container__button:hover {
-    background-color: #B59788;
+    background-color: variables.$medium-font;
     opacity:0.8;
 }
 
