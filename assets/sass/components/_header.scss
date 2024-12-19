@@ -36,7 +36,6 @@
     text-decoration: none;
     color: white;
     }
-  }
 
   .connection__button:hover {
     transform: scale(1.1);
@@ -45,6 +44,7 @@
   .connection__button:active {
     background-color: variables.$medium-font;
   }
+}
 
 @media screen and (max-width: 991px) {
   .connection__button {
