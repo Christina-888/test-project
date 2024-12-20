@@ -39,7 +39,7 @@
     }
 
   .connection__button:hover {
-    transform: scale(1.1);
+    transform: variables.$button-transform;
   }
 
   .connection__button:active {
