@@ -1,0 +1,224 @@
+@use "../abstracts/variables";
+@use '../abstracts/mixin';
+
+body {
+margin: 0;
+padding: 0;
+background-color: #f2f2f2;
+background-image: url('images/bedge-grunge.png');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.trainer__title {
+display: flex; 
+justify-content: center;
+align-items: center;
+@include mixin.font-style(variables.$font-size-large, variables.$font-weight);
+color: variables.$primary-color;
+line-height: 1.5;
+text-align: center;
+margin-bottom: -45px;
+}
+
+.trainer__photo {
+width: 500px;
+height: 800px;
+}
+
+.trainer__image {
+display: flex; 
+justify-content: center;
+align-items: center;
+}
+
+.trainer__text {
+color: variables.$secondary-color;
+@include mixin.font-style(variables.$font-size-small, variables.$font-weight);
+position: absolute;
+}
+
+.trainer {
+position: relative;
+max-width: 1000px;
+margin: 0 auto;
+text-align: center;
+padding: 50px 20px;
+}
+
+.trainer__photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.trainer__text_position_one {
+  top: 40%;
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.trainer__text_position_two {
+  top: 55%;
+  left: 0%;
+}
+
+.trainer__text_position_three {
+  bottom: 18%;
+  left: 18%;
+}
+
+.trainer__text_position_four {
+  top: 55%;
+  right: 0%;
+}
+
+.trainer__text_position_five {
+  bottom: 25%;
+  right: 2%;
+}
+
+.trainer__arrow {
+  position: absolute;
+}
+
+.trainer__arrow_position_one {
+  top: 33%;
+  left: 33%;
+  transform: rotate(5deg);
+}
+
+.trainer__arrow_position_two {
+  top: 51%;
+  left: 20%;
+  transform: rotate(0deg);
+}
+
+.trainer__arrow_position_three {
+  bottom: 25%;
+  left: 24%;
+  transform: rotate(9deg);
+}
+
+.trainer__arrow_position_four {
+  top: 46%;
+  right: 28%;
+  transform: rotate(0deg);
+}
+
+.trainer__arrow_position_five {
+  top: 63%;
+  left: 73%;
+  transform: rotate(0deg);
+}
+
+.whatsapp-link {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .whatsapp-link {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    @include mixin.button-style(variables.$primary-color, aliceblue);
+    transform: translateX(-50%);
+  }
+
+  body {
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .trainer {
+    padding-bottom: 100px;
+  }
+
+  .trainer__image {
+    max-width: 90%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .trainer__title {
+    font-size: variables.$font-size-medium;
+  }
+
+  .trainer__text {
+    font-size: variables.$font-size-small;
+    @include mixin.text-shadow(variables.$text-shadow);
+  }
+
+  .trainer__text_position_one,
+  .trainer__text_position_two,
+  .trainer__text_position_three,
+  .trainer__text_position_four,
+  .trainer__text_position_five {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 90%;
+  }
+
+  .trainer__text_position_one {
+    top: 38%;
+    left: 28%;
+  }
+
+  .trainer__text_position_two {
+    top: 50%;
+    left: -20%;
+  }
+
+  .trainer__text_position_three {
+    top: 70%;
+    left: -25%;
+  }
+
+  .trainer__text_position_four {
+    top: 45%;
+    right: -10%;
+  }
+
+  .trainer__text_position_five {
+    bottom: 27%;
+    right: -15%;
+  }
+
+  .trainer__arrow_position_one {
+    top: 30%;
+    left: 18%;
+    transform: rotate(5deg);
+    width: 80px;
+  }
+
+  .trainer__arrow_position_two {
+    top: 45%;
+    left: 10%;
+    transform: rotate(-30deg);
+    width: 80px;
+  }
+
+  .trainer__arrow_position_three {
+    bottom: 30%;
+    left: 10%;
+    width: 70px;
+    transform: rotate(9deg);
+  }
+
+  .trainer__arrow_position_four {
+    top: 35%;
+    right: 13%;
+    transform: rotate(0deg);
+    width: 60px;
+  }
+
+  .trainer__arrow_position_five {
+    top: 60%;
+    right: 13%;
+    transform: rotate(0deg);
+  }
+}
