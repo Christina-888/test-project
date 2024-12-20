@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 50px;
+  margin-top: 50px;
 }
 .feedback_container {
   display: flex;
@@ -19,7 +21,6 @@
   color: variables.$medium-font;
   font-family: variables.$primary-font;
   font-size: variables.$small-size;
-  margin-top: 50px;
 }
 
 .feedback__button {
