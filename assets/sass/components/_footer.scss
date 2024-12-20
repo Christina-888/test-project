@@ -2,16 +2,19 @@
 
 .footer {
   display: flex;
-  background-color: variables.$background-grey;
+  background: url(/test-project/assets/img/feedback/background.png), variables.$background-grey;
+  justify-content: center;
 
   .footer__list {
     display: inline-flex;
     list-style-type: none;
     
+    
     .footer__item {
       font-family: variables.$header-font;
       font-size: 1.2vw;
       margin: 20px 30px 70px;
+      scroll-behavior: smooth;
 
       .footer__link {
         text-decoration: none;

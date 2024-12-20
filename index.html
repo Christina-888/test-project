@@ -17,10 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link
       rel="shortcut icon"
@@ -49,19 +51,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav menu me-auto mb-2 mt-lg-4 mb-lg-4">
               <li class="nav-item list">
-                <a class="nav-link list__points" href="#">О системе</a>
+                <a class="nav-link list__points" href="#training">Пробная тренировка</a>
               </li>
               <li class="nav-item list">
-                <a class="nav-link list__points" href="#">Пробная тренировка</a>
+                <a class="nav-link list__points" href="#costs">Стоимость</a>
               </li>
               <li class="nav-item list">
-                <a class="nav-link list__points" href="#">Стоимость</a>
+                <a class="nav-link list__points" href="#reviews">Отзывы</a>
               </li>
               <li class="nav-item list">
-                <a class="nav-link list__points" href="#">Отзывы</a>
-              </li>
-              <li class="nav-item list">
-                <a class="nav-link list__points" href="#">Контакты</a>
+                <a class="nav-link list__points" href="#contacts">Контакты</a>
               </li>
             </ul>
             <form class="d-flex connection" role="search">
@@ -103,16 +102,16 @@
     <!-- конец О себе (Юля Коломеец) -->
 
     <!-- Пробная тренировка (Саргылана) -->
-    <div class="training-container">
+    <div id="training" class="training-container">
       <h2 class="text-center training-container__text">Бесплатная пробная тренировка</h2>
       <div class="d-flex justify-content-center training-container__cover-video">
-          <video class="video training-container__video" controls poster="./assets/img/woman_train.jpg">
-              <source src="data:," type="video/mp4">
+          <video class="video training-container__video" controls poster="./assets/img/woman_train_really.jpg">
+              <source src="./assets/img/video/promo_video.mp4" type="video/mp4">
               Ваш браузер не поддерживает тег видео.
           </video>
       </div>
       <div class="d-flex justify-content-center training-container__cover-button">
-          <a href="#" target="_blank" class="btn training-container__button">Забрать тренировку</a>
+          <a href="https://disk.yandex.ru/d/WHmMNLzymX5Uvw" target="_blank" class="btn training-container__button">Забрать тренировку</a>
       </div>
       <div class="position-absolute training-container__leafs">
       <img src="./assets/img/leaf_up.png" alt="leaf_up" class="position-absolute training-container__leaf-up">
@@ -120,7 +119,6 @@
       </div>
     </div>
     <!-- конец Пробная тренировка (Саргылана) -->
-
     <!-- О системе (Юля Хорева) -->
     <div class="about-system">
       <div class="about-system_wrap-left">
@@ -166,7 +164,7 @@
   </div>
     <!-- конец Для кого подходит (Диана) -->
     <!-- Стоимость (Наташа) -->
-    <div class="section-costs">
+    <div id="costs" class="section-costs">
       <div class="costs-container">
         <div class="costs-wrapper">
           <h2 class="title-costs">Стоимость тренировок</h2>
@@ -200,7 +198,7 @@
 
     <!-- конец отзывы (Юля Иванова) -->
 
-    <h2 class="maintext">Результаты системы Inside Out</h2>
+    <h2 id="reviews" class="maintext">Результаты системы Inside Out</h2>
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -370,7 +368,7 @@
     </div>
 
     <!-- Форма обратной связи (Полина) -->
-    <section class="feedback">
+    <section id="contacts" class="feedback">
       <div class="feedback_container">
         <div class="feedback__text">
           Свяжитесь со мной одним нажатием кнопки
@@ -402,16 +400,13 @@
     <footer class="footer">
       <ul class="footer__list">
         <li class="footer__item">
-          <a class="footer__link" href="#">О системе</a>
+          <a class="footer__link" href="#training">Пробная тренировка</a>
         </li>
         <li class="footer__item">
-          <a class="footer__link" href="#">Пробная тренировка</a>
+          <a class="footer__link" href="#costs">Стоимость</a>
         </li>
         <li class="footer__item">
-          <a class="footer__link" href="#">Стоимость</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Отзывы</a>
+          <a class="footer__link" href="#reviews">Отзывы</a>
         </li>
       </ul>
     </footer>
