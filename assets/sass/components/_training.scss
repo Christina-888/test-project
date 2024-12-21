@@ -20,12 +20,12 @@
             border: none; 
             padding: 1vw 4.2vw; 
             font-size: 1.3em; 
-            cursor: pointer;
         }
     
         .training-container__button:hover {
             background-color: variables.$medium-font;
-            opacity:0.8;
+            color: white; 
+            transform: variables.$button-transform;
         }
 
     .training-container__leaf-up {
